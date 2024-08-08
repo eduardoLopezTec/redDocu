@@ -1,0 +1,120 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.contHome {
+    background-image: linear-gradient(rgba(225, 175, 4, 0.25), rgba(210, 150, 20, 0.25)), url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 360px;
+    margin-top: 90px;
+}
+
+.banner {
+    background-color: rgba(225, 175, 4, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+}
+
+.banner > h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 300;
+    max-width: 992px;
+    margin-top: 20px;
+    text-shadow: 2px 1px 4px #000;
+}
+
+.busqueda {
+    display: flex;
+    width: 760px;
+}
+
+.busqueda > input, .busqueda > button {
+    border: none;
+    box-shadow: 2px 2px 8px #333;
+    font-size: 1.1em;
+    height: 50px;
+    margin-top: 20px;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.busqueda > input {
+    border-radius: 5px 0 0 5px;
+    width: 80%;
+}
+
+.busqueda > button {
+    background-color: #e1af04;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    width: 20%;
+}
+
+.destacadosTitulo, .destacadosSub {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.destacadosSub {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.pubDestacadas {
+    display: flex;
+    justify-content: space-around;
+    height: 320px;
+    max-width: 1200px ;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px black;
+    font-size: 0.85em;
+    font-weight: 400;
+    width: 250px;
+}
+
+.card > img {
+    border-radius: 5px;
+    width: inherit;
+}
+
+.card h3, .card p {
+    margin: 10px;
+}
+
+.piePagina {
+    background-color: #e5af41;
+    height: 200px;
+    margin-top: 20px;
+}
