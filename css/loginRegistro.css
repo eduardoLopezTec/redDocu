@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+p { 
+    font-size: 0.85em;
+}
+
+.contLogin {
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #333;
+    display: flex;
+    font-weight: 400;
+    margin-top: 100px;
+    overflow: hidden;
+    text-align: center;
+    width: 600px;
+}
+
+.contLogin div {
+    padding: 50px 20px;
+    width: 50%;
+}
+
+.campoTexto, button {
+    border: 1px solid #777;
+    border-radius: 5px;
+    display: block;
+    height: 40px;
+    margin: 20px 0;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+button {
+    box-shadow: 1px 1px 4px #000;
+    font-size: 1em;
+}
+
+button:hover {
+    box-shadow: 2px 2px 8px #333;
+}
+
+.ingresar button, .registro button {
+    background-color: #dab410;
+    border: none;
+    color: white;
+}
+
+.ingresar a, .registro a {
+    color: #dab410;
+}
+
+.nuevoAqui {
+    background-color: orangered;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nuevoAqui button {
+    border: none;
+    color: orangered;
+}
+
+.registro span {
+    color: #000;
+    font-size: 0.85em;
+}

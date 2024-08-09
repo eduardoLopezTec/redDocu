@@ -15,7 +15,6 @@ html {
 }
 
 a {
-    color: white;
     text-decoration: none;
 }
 
@@ -114,7 +113,35 @@ ul {
 }
 
 .piePagina {
-    background-color: #e5af41;
-    height: 200px;
-    margin-top: 20px;
+    background-color: #333;
+    font-size: 0.85em;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.menuPie {    
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+}
+
+.piePagina a {
+    color: white;
+}
+
+.piePagina .resaltado {
+    font-weight: 500;
+}
+
+.piePagina .derechos {
+    border-top: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.piePagina .derechos > p {
+    color: white;
+    margin: 0 auto;
 }

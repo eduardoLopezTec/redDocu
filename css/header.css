@@ -52,6 +52,10 @@
   height: 100%;
 }
 
+.logoTexto {
+  color: white;
+}
+
 .logoImg {
   display: block;
   height: 36px;
@@ -63,6 +67,7 @@
 }
 
 .menu .enlaceMenu {
+  color: white;
   padding: 18px 20px;
   transition: all 0.3s;
 }
@@ -70,4 +75,31 @@
 .menu .enlaceMenu:hover {
   border-bottom: 4px solid #e1af04;
   padding-bottom: 15px;
+}
+
+.subMenu {
+  background-color: white;
+  box-shadow: 1px 1px 4px #444;
+  display: none;
+  margin-top: 19px;
+  width: 220px;
+  position: absolute;
+}
+
+.subMenu li {
+  display: block;
+  padding: 15px 20px;
+}
+
+.subMenu li:hover {
+  background-color: #ddd;
+}
+
+.subMenu .enlaceSubmenu {
+  color: #333;
+  font-weight: 400;
+}
+
+.menu li:hover .subMenu {
+  display: block;
 }
