@@ -1,0 +1,40 @@
+/*
+  Estos estilos corresponden a los siguientes archivos:
+
+  - historia.html
+    - misión
+    - visión
+  - colecciones.html
+  - publicaciones.html
+  - noticias.html
+  - eventos.html
+  - ayuda.html
+  - preguntas.html
+  - contacto.html
+*/
+
+.contenedor {
+  
+}
+
+.contMain {
+  color: #333;
+  margin: 0 auto;
+  padding: 40px;
+  width: 922px;
+}
+
+.contMain h2 {
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.contMain p {
+  font-weight: 400;
+  line-height: 1.8em;
+  margin-top: 20px;
+}
+
+.contHistoria, .contMision, .contVision {
+  padding-top: 100px;
+}

@@ -1,0 +1,112 @@
+
+.contMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    overflow: hidden;
+    width: 100%;
+}
+.contFormulario {
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    width: 720px;
+}
+
+.formulario, .contInfo {
+    padding: 40px 20px;
+    width: 50%;
+}
+
+.tituloFormulario {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.formGrupo {
+    margin-bottom: 20px;
+}
+
+.formLabel {
+    display: block;
+    font-size: 0.85em;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.campoTexto, .mensaje, .botonEnviar {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #999;
+    color: #555;
+    font-family: "Roboto";
+    font-size: 0.9em;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.campoTexto:focus, .mensaje:focus {
+    border: 1px solid #dab410;
+    box-shadow: 1px 1px 8px #888;
+}
+
+.mensaje {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.botonEnviar {
+    background-color: #dab410;
+    color: white;
+    font-size: 1em;
+}
+
+.contInfo {
+    background-color: orangered;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.infoDiv {
+    text-align: center;
+    width: 100%;
+}
+
+.infoDiv img, .infoDiv span {
+    display: block;
+    margin: auto;
+}
+
+.infoDiv span {
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+
+@media (max-width:768px) {
+    .contFormulario {
+        flex-direction: column;
+        width: 70%;
+    }
+    .formulario, .contInfo {
+        width: 100%;
+    }
+    .infoDiv {
+        padding: 20px;
+    }
+}
+
+@media (max-width:576px) {
+    .contFormulario {
+        width: 100%;
+    }
+}

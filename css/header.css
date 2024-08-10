@@ -12,7 +12,7 @@
 }
 
 .redesSesiones {
-  background-image: url(../img/textura.jpg);
+  background-color: #333;
   display: flex;
   height: 30px;
   justify-content: flex-end;
@@ -27,7 +27,7 @@
 }
 
 .sesiones > a {
-  color: #222;
+  color: #e1af04;
   font-size: 0.8em;
   font-weight: 400;
   line-height: 30px;
@@ -36,7 +36,7 @@
 }
 
 .sesiones > a:hover {
-  background-color: #eee;
+  background-color: #444;
 }
 
 .navegacion {
@@ -68,13 +68,15 @@
 
 .menu .enlaceMenu {
   color: white;
-  padding: 18px 20px;
+  font-size: 0.9em;
+  padding: 20px;
   transition: all 0.3s;
 }
 
 .menu .enlaceMenu:hover {
+  background-color: #333;
   border-bottom: 4px solid #e1af04;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 }
 
 .subMenu {
