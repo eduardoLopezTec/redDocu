@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contacto | redDocu </title>
+    <title> Resultados búsqueda | redDocu </title>
   
     <link type="text/css" rel="stylesheet" href="../css/header.css">
     <link type="text/css" rel="stylesheet" href="../css/principal.css">
     <link type="text/css" rel="stylesheet" href="../css/formularios.css">
+    <link type="text/css" rel="stylesheet" href="../css/resultados.css">
 
     <script defer src="../js/redDocu.js"></script>
 </head>
 <body>
-
   <div class="main">
 
     <!--  Inicio encabezado  -->
@@ -92,60 +92,21 @@
 
     </header>
     <!--  Fin barra de encabezado  -->
-    
-    <div class="contFormulario">
-      <form class="formulario" action="">
-        <h2 class="tituloFormulario"> Escríbanos. Responderemos en el menor tiempo posible. </h2>
 
-          <div class="formGrupo">
-            <label for="nombre" class="formLabel"> Nombre </label>
-            <input class="campoTexto" type="text" name="" id="nombre">
-          </div>
-
-          <div class="formGrupo">
-            <label for="correo" class="formLabel"> Correo </label>
-            <input class="campoTexto" type="text" name="" id="correo">
-          </div>
-
-          <div class="formGrupo">
-            <label for="asunto" class="formLabel"> Asunto </label>
-            <input class="campoTexto" type="text" name="" id="asunto">
-          </div>
-          
-          <div class="formGrupo">
-            <label for="mensaje" class="formLabel"> Mensaje </label>
-            <textarea class="mensaje" name="" id="mensaje"></textarea>
-          </div>
-
-          <div class="formGrupo">
-            <button type="submit" class="botonEnviar"> Enviar </button>
-          </div>
-        
-      </form>
-
-      <div class="contInfo">
-        <div class="infoDiv">
-          <img src="../img/ubicar.svg" alt="Icono ubicación">
-          <span><strong> Dirección: </strong></span>
-          <span> Diagonal 54 No. 126A-23 </span>
-          <span> Bogotá D.C. </span>
-        </div>  
-        <div class="infoDiv">
-          <img src="../img/llamar.svg" alt="Icono números de contacto">
-          <span><strong> Teléfono: </strong></span>
-          <span> (601) 5545543 </span>
-          <span> 01-8000-345623 </span>
-        </div>  
-        <div class="infoDiv">
-          <img src="../img/escribir.svg" alt="Icono correo biblioteca">
-          <span><strong> Correo: </strong></span>
-          <span> reddocucontacto@correo.com </span>
-        </div>  
-        
-      </div>
+  <div class="contFlexStart">
+    <div class="filtro">
+        <div class="formGrupo">
+            <input type="search" name="" id="" class="campoTexto buscarSmall" placeholder="ingrese términos de búsqueda...">
+            <button type="submit" class="botonEnviar botonSmall"> Buscar</button>
+        </div>
+        <div class="filtros">
+            <input type="button" value="" class="botonSmall">
+            <input type="button" value="" class="botonSmall">
+            <input type="button" value="" class="botonSmall">
+            <input type="button" value="" class="botonSmall">
+        </div>
     </div>
-
   </div>
-    
+
+
 </body>
-</html>

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contacto | redDocu </title>
+  <title> Login Administradores | redDocu </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   
-    <link type="text/css" rel="stylesheet" href="../css/header.css">
-    <link type="text/css" rel="stylesheet" href="../css/principal.css">
-    <link type="text/css" rel="stylesheet" href="../css/formularios.css">
+  <link type="text/css" rel="stylesheet" href="../css/header.css">
+  <link type="text/css" rel="stylesheet" href="../css/principal.css">
+  <link type="text/css" rel="stylesheet" href="../css/formularios.css">
 
-    <script defer src="../js/redDocu.js"></script>
+  <script defer src="../js/redDocu.js"></script>
+<head>
 </head>
 <body>
-
   <div class="main">
 
     <!--  Inicio encabezado  -->
@@ -92,60 +91,40 @@
 
     </header>
     <!--  Fin barra de encabezado  -->
-    
-    <div class="contFormulario">
-      <form class="formulario" action="">
-        <h2 class="tituloFormulario"> Escríbanos. Responderemos en el menor tiempo posible. </h2>
+    <div class="contFormulario contFormularioAdmin">
+      <form action="" class="formulario">
 
-          <div class="formGrupo">
-            <label for="nombre" class="formLabel"> Nombre </label>
-            <input class="campoTexto" type="text" name="" id="nombre">
-          </div>
+        <h2 class="tituloFormulario textAdmin"> Ingreso Administradores </h2>
+        <div class="formGrupo">
+          <label for="usuario" class="formLabel textAdmin"> Usuario </label>
+          <input type="mail" name="" id="usuario" class="campoTexto">
+        </div>
 
-          <div class="formGrupo">
-            <label for="correo" class="formLabel"> Correo </label>
-            <input class="campoTexto" type="text" name="" id="correo">
-          </div>
+        <div class="formGrupo">  
+          <label for="clave" class="formLabel textAdmin"> Contraseña </label>
+          <input type="password" name="" id="clave" class="campoTexto" >
+        </div>
 
-          <div class="formGrupo">
-            <label for="asunto" class="formLabel"> Asunto </label>
-            <input class="campoTexto" type="text" name="" id="asunto">
-          </div>
-          
-          <div class="formGrupo">
-            <label for="mensaje" class="formLabel"> Mensaje </label>
-            <textarea class="mensaje" name="" id="mensaje"></textarea>
-          </div>
+        <div class="formGrupo">
+          <span> <a class="formLink textAdmin" href="#"> ¿Olvidó su contraseña? </a> </span>
+        </div>
 
-          <div class="formGrupo">
-            <button type="submit" class="botonEnviar"> Enviar </button>
-          </div>
-        
+        <div class="formGrupo">
+          <button type="submit" class="botonEnviarAdmin"> Enviar </button>
+        </div>        
       </form>
 
-      <div class="contInfo">
+      <div class="contInfo contInfoClaro">
         <div class="infoDiv">
-          <img src="../img/ubicar.svg" alt="Icono ubicación">
-          <span><strong> Dirección: </strong></span>
-          <span> Diagonal 54 No. 126A-23 </span>
-          <span> Bogotá D.C. </span>
-        </div>  
-        <div class="infoDiv">
-          <img src="../img/llamar.svg" alt="Icono números de contacto">
-          <span><strong> Teléfono: </strong></span>
-          <span> (601) 5545543 </span>
-          <span> 01-8000-345623 </span>
-        </div>  
-        <div class="infoDiv">
-          <img src="../img/escribir.svg" alt="Icono correo biblioteca">
-          <span><strong> Correo: </strong></span>
-          <span> reddocucontacto@correo.com </span>
-        </div>  
-        
+          <h2 class="tituloFormulario"> Información importante administradores </h2>
+          <p class="info"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officia error, 
+            earum modi eaque quis? 
+          </p>
+        </div>
       </div>
     </div>
-
   </div>
-    
+
 </body>
 </html>

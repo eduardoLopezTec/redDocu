@@ -4,98 +4,145 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   
-  <link type="text/css" rel="stylesheet" href="../css/loginRegistro.css">
+  <link type="text/css" rel="stylesheet" href="../css/formularios.css">
   <link type="text/css" rel="stylesheet" href="../css/header.css">
   <link type="text/css" rel="stylesheet" href="../css/principal.css">
+
+  <script defer src="../js/redDocu.js"></script>
 <head>
 </head>
 <body>
+  <div class="main">
 
-  <div class="contenedor">
-    <!--  Inicio navegación  -->
-    <header class="encabezado"> 
-      <div class="contNav">
+    <!--  Inicio encabezado  -->
+    <header class="header">
 
-        <div class="redesSesiones">
-          <div class="redes">
-            <a href="#" class="iconoRed"><img src="../img/fb.png" alt="Ir a la página de la biblioteca en facebook"></a>
-            <a href="#" class="iconoRed"><img src="../img/yt.png" alt="Ir al canal de la biblioteca en youtube"></a>
-            <a href="#" class="iconoRed"><img src="../img/x.png" alt="Publicaciones de la biblioteca en X"></a>
-          </div>
-          <div class="sesiones">
-            <a href="#"> Administradores </a>
-            <a href="login.html"> Iniciar sesión </a>
-            <a href="registro.html"> Registro </a>
-          </div>
+      <div class="topBar"><!--  Inicio barra superior  -->
+
+        <div class="social">          
+          <a href="https://www.facebook.com"> <img src="../img/facebook.svg" class="icon" alt=""></a>
+          <a href="https://www.youtube.com"> <img src="../img/youtube.svg" class="icon" alt=""></a>
+          <a href="https://www.whatsapp.com"> <img src="../img/whatsapp.svg" class="icon" alt=""></a>
         </div>
 
-        <div class="navegacion">
-          <div class="logo"><!--  Logo  -->
-            <a href="../index.html">
-              <img src="../img/logo.png" alt="Logo de la biblioteca" class="logoImg">
-              <span class="logoTexto">redDocu</span>
-            </a>
-          </div>
+        <div class="login" id="loginList">
+          <a href="loginAdmin.html"> Administradores </a>
+          <a href="login.html"> Usuarios </a>
+          <a href="registro.html"> Registro </a>          
+        </div>
 
-          <div>
-            <ul class="menu">
-              <li class="itemMenu"><a href="../index.html" class="enlaceMenu"> Inicio </a></li>
-              <li class="itemMenu">
-                <a href="nosotros.html" class="enlaceMenu"> Nosotros </a>
-                <ul class="subMenu">
-                  <li><a class="enlaceSubmenu" href="nosotros.html#mision-vision"> Misión - Visión </a></li>
-                  <li><a class="enlaceSubmenu" href="nosotros.html#equipo"> Nuestro equipo </a></li>
-                </ul>
-              </li>
-              <li class="itemMenu"><a href="colecciones.html" class="enlaceMenu"> Colecciones </a>
-                <ul class="subMenu">
-                  <li><a class="enlaceSubmenu" href="#"> Partituras </a></li>
-                  <li><a class="enlaceSubmenu" href="#"> Libros antiguos </a></li>
-                  <li><a class="enlaceSubmenu" href="#"> Manuscritos </a></li>
-                </ul>
-              </li>
-              <li class="itemMenu"><a href="publicaciones.html" class="enlaceMenu"> Publicaciones </a>
-                <ul class="subMenu">
-                  <li><a class="enlaceSubmenu" href="noticias.html"> Noticias</a></li>
-                  <li><a class="enlaceSubmenu" href="eventos.html"> Eventos </a></li>
-                </ul>
-              </li>
-              <li class="itemMenu"><a href="ayuda.html" class="enlaceMenu"> Ayuda </a>
-                <ul class="subMenu">
-                  <li><a class="enlaceSubmenu" href="preguntas.html"> Preguntas frecuentes </a></li>
-                </ul>
-              </li>
-              <li class="itemMenu"><a href="contacto.html" class="enlaceMenu"> Contacto </a></li>
-            </ul>
-          </div> <!-- Menú  -->
+        <div class="loginIcon" id="loginIcon">
+          <img src="../img/login.svg" class="icon" alt="">
+        </div>
+        
+      </div><!--  Fin barra superior  -->
+
+      <div class="navBar"><!--  Inicio barra de navegación  -->
+
+        
+        <a href="" class="">
+          <div class="contLogo"><!--  Logo  -->
+            <img src="../img/book.svg" alt="" class="logo">
+            <h1 class="logoText"> redDocu </h1>
+          </div>
+        </a>
+
+        <nav class="navigation" id="navigation"><!--  Menu  -->
+          <ul class="menu">
+            <li class="menuItem"><a href="../index.html" class="menuLink"> Inicio </a></li>
+            <li class="menuItem"><a href="nosotros.html" class="menuLink"> Nosotros </a>
+              <ul class="subMenu">
+                <li><a href="nosotros.html"> Nuestra historia </a></li>
+                <li><a href="nosotros.html#mision-vision"> Misión - Visión </a></li>
+                <li><a href="nosotros.html#equipo"> Nuestro Equipo </a></li>
+              </ul>
+            </li>
+            <li class="menuItem"><a href="colecciones.html" class="menuLink"> Colecciones </a>
+              <ul class="subMenu">
+                <li><a href="#"> Partituras </a></li>
+                <li><a href="#"> Libros antiguos </a></li>
+                <li><a href="#"> Manuscritos </a></li>
+              </ul>            
+            </li>
+            <li class="menuItem"><a href="publicaciones.html" class="menuLink"> Publicaciones </a>
+              <ul class="subMenu">
+                <li><a href="noticias.html"> Noticias </a></li>
+                <li><a href="eventos.html"> Eventos </a></li>
+              </ul>
+            </li>
+            <li class="menuItem"><a href="ayuda.html" class="menuLink"> Ayuda </a>
+              <ul class="subMenu">
+                <li><a href="ayuda.html"> Preguntas frecuentes </a></li>
+                <li><a href="preguntas.html"> Otra ayuda </a></li>
+              </ul>
+            </li>
+            <li class="menuItem"><a href="contacto.html" class="menuLink"> Contacto </a></li>
+          </ul>
+        </nav>        
+
+        <input type="checkbox" name="" id="menu-check"><!--  botones menu y cerrar  -->
+        <div class="menuIcon" id="menu-icon">
+          <label for="menu-check">
+            <img src="../img/menu.svg" alt="" id="open-icon">
+            <img src="../img/close.svg" alt="" id="close-icon">
+          </label>
+        </div>
+      </div><!--  Fin barra de navegación  -->
+
+    </header>
+    <!--  Fin barra de encabezado  -->
+    <div class="contFormulario">
+      <form action="" class="formulario">
+
+        <h2 class="tituloFormulario"> Registro </h2>
+
+        <div class="formGrupo">
+          <label for="" class="formLabel"> Nombre y apellido </label>
+          <input type="text" name="" id="" class="campoTexto">
+        </div>
+
+        <div class="formGrupo">
+          <label for="" class="formLabel"> Correo electrónico </label>
+          <input type="mail" name="" id="" class="campoTexto">
+        </div>
+
+        <div class="formGrupo">
+          <label for="" class="formLabel"> Crear contraseña </label>
+          <input type="password" name="" id="" class="campoTexto">
+        </div>
+
+        <div class="formGrupo">
+          <label for="" class="formLabel"> Verificar contraseña </label>
+          <input type="password" name="" id="" class="campoTexto">
+        </div>
+        
+        <div class="formGrupo">
+          <label for="" class="formLabel">
+            <input type="checkbox" name="" id="" class="campoCheck">
+            <span> Aceptar <a href="#" class="formLink"> Términos y condiciones </a></span>
+          </label>
+        </div>
+
+        <div class="formGrupo">
+          <button type="submit" class="botonEnviar"> Enviar </button>
+        </div>
+      </form>
+      
+      <div class="contInfo">
+        <div class="infoDiv">
+          <h2 class="tituloFormulario"> Bienvenido </h2>
+          
+          <p> Accederá a una gran comunidad que está compartiendo su pasión por la lectura.
+              Consultar, compartir y disfrutar de millones de documentos dispuestos en todo
+              el mundo con total confiabilidad y seguridad. 
+          </p>
         </div>
       </div>
-    </header>
-</div>
-
-  <div class="contLogin">
-    <div class="registro">
-      <form action="">
-        <h3> Regístrese </h3>
-        <input class="campoTexto" type="text" placeholder="Nombres" required>
-        <input class="campoTexto" type="text" placeholder="Correo" required>
-        <input class="campoTexto" type="text" placeholder="Crear contraseña" required>
-        <input class="campoTexto" type="text" placeholder="Confirmar contraseña" required>
-        <button> Enviar </button>
-        <input type="checkbox" name="terminos" id="terminos">
-        <span> Aceptar </span>
-        <span><a href="#"> Términos y condiciones </a></span>
-      </form>
-    </div>
-
-    <div class="nuevoAqui">
-      <h3> Bienvenido </h3>
-      <p> Accederá a una gran comunidad que está compartiendo su pasión por la lectura.
-          Consultar, compartir y disfrutar de millones de documentos dispuestos en todo
-          el mundo con total confiabilidad y seguridad. 
-      </p>
     </div>
   </div>
+
+  
+  
 
 </body>
 </html>

@@ -1,107 +1,254 @@
-.encabezado {
-  background-color: #111;
-  height: 90px;
+/**** Estilos para el encabezado: barra superior y barra de navegación ****/
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 80px;
+  min-height: calc(100dvh - 80px);
+  width: 100%;
+}
+
+.mainBloque {
+  flex-direction: column;
+}
+
+.header {
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.contNav {
-  margin: 0 auto;
-}
-
-.redesSesiones {
-  background-color: #333;
+/****  Inicio estilos barra superior  ****/
+.topBar {
   display: flex;
-  height: 30px;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 40px;
-}
-
-.iconoRed > img {
-  height: 24px;
-  margin-right: 20px;
-  margin-top: 4px;
-}
-
-.sesiones > a {
-  color: #e1af04;
-  font-size: 0.8em;
-  font-weight: 400;
-  line-height: 30px;
-  margin-left: 20px;
-  padding: 6px 20px;
-}
-
-.sesiones > a:hover {
-  background-color: #444;
-}
-
-.navegacion {
-  display: flex;
-  height: 60px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+
+  background-color: #111;
+  height: 30px;
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.logo {
+.topBar .icon {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.topBar .login a {
+  color: #ffc92e;
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 8px 20px;
   text-align: center;
-  height: 100%;
 }
 
-.logoTexto {
+.topBar .login a:hover {
+  background-color: #222;
   color: white;
 }
+/****  Fin estilos barra superior  ****/
 
-.logoImg {
-  display: block;
-  height: 36px;
-  width: auto;
+/*  Iconos ocultos en pantalla Large solo visibles para tablets y móviles  */
+.loginIcon, .menuIcon {
+  display: none;
 }
+/*  Iconos ocultos en pantalla Large solo visibles para tablets y móviles  */
 
-.menu {
+/****  Inicio estilos barra de navegación  ****/
+.navBar {
+  background-color: #000;
   display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 20px;
+  width: 100%;
 }
 
-.menu .enlaceMenu {
+.navBar > a {  /*  <- Manipular vinculo del logo  */
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.contLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contLogo .logoText {
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.navigation .menu {
+  display: flex;
+  align-items: center;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation .menu li a {
   color: white;
   font-size: 0.9em;
-  padding: 20px;
-  transition: all 0.3s;
+  line-height: 46px;
+  padding: 14px 20px;
 }
 
-.menu .enlaceMenu:hover {
-  background-color: #333;
-  border-bottom: 4px solid #e1af04;
-  padding-bottom: 16px;
+.navigation .menu li a:hover {
+  background-color: #222;
+  border-bottom: 4px solid #ffc92e;
+}
+
+.menuIcon {
+  padding-top: 6px;
+}
+
+#menu-check {
+  display: none;
 }
 
 .subMenu {
-  background-color: white;
-  box-shadow: 1px 1px 4px #444;
-  display: none;
-  margin-top: 19px;
-  width: 220px;
-  position: absolute;
-}
-
-.subMenu li {
-  display: block;
-  padding: 15px 20px;
-}
-
-.subMenu li:hover {
   background-color: #ddd;
-}
-
-.subMenu .enlaceSubmenu {
-  color: #333;
-  font-weight: 400;
+  box-shadow: 1px 1px 4px #333;
+  display: none;
+  position: absolute;
+  top: 80px;
+  width: 200px;
 }
 
 .menu li:hover .subMenu {
   display: block;
 }
+
+.navigation .subMenu li {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.navigation .subMenu li a {
+  color: #333;
+  display: block;
+  padding: 5px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.navigation .subMenu li a:hover {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+/****  Fin estilos barra de navegación  ****/
+
+@media (max-width:768px) {
+
+  .navigation .menu li a {
+    font-size: 1.2em;
+  }
+
+  .menuIcon #close-icon {
+    display: none;
+  }
+
+  #menu-check:checked ~ .menuIcon #open-icon {
+    display: none;
+  }
+
+  #menu-check:checked ~ .menuIcon #close-icon {
+    display: block;
+  }
+
+  .loginIcon, .menuIcon {
+    cursor: pointer;
+    display: block;
+
+  }
+
+  .login {
+    background-color: #111;
+    opacity: 0;
+    position: fixed;
+    top: 30px;
+    right: -100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  .topBar .login a {
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    display: block;
+    font-size: 1em;
+    padding: 10px 30px;
+  }
+
+  .showLogin {
+    background-color: #fff;
+    opacity: 1;
+    right: 0;
+  }
+
+  .navigation {
+    background-color: rgba(0, 0, 0, 0.95);
+    opacity: 0;
+    height: 100dvh;
+    position: absolute;
+    top: 80px;
+    left: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+  }
+
+  .showNavigation {
+    opacity: 1;
+    left: 0;
+  }
+
+  .navigation .menu {
+    flex-direction: column;
+  }
+
+  .navigation .menu li {
+    border-bottom: 1px solid #333;
+    width: 100%;
+  }
+
+  .navigation .menu li a {
+    border-bottom: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navigation .menu li a:hover {
+    border-bottom: none;
+  }
+
+  .subMenu {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

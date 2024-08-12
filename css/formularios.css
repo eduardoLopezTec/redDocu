@@ -1,23 +1,23 @@
 
-.contMain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    overflow: hidden;
-    width: 100%;
-}
-.contFormulario {
-    background-color: #eee;
+
+.contFormulario, .contFormularioAdmin {
     border-radius: 10px;
     display: flex;
-    height: 100%;
+    margin: 40px 0;
     overflow: hidden;
     width: 720px;
 }
 
-.formulario, .contInfo {
-    padding: 40px 20px;
+.contFormulario {
+    background-color: #eee;
+}
+
+.contFormularioAdmin {
+    background-color: #111;
+}
+
+.formulario, .contInfo, .contInfoAdmin {
+    padding: 20px;
     width: 50%;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .formGrupo {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .formLabel {
@@ -39,7 +39,11 @@
     margin-bottom: 4px;
 }
 
-.campoTexto, .mensaje, .botonEnviar {
+.textAdmin {
+    color: #ddd;
+}
+
+.campoTexto, .mensaje, .botonEnviar, .botonSecundario, .botonEnviarAdmin {
     border: 1px solid #aaa;
     border-radius: 5px;
     box-shadow: 1px 1px 4px #999;
@@ -61,19 +65,76 @@
     resize: vertical;
 }
 
-.botonEnviar {
-    background-color: #dab410;
-    color: white;
+.botonEnviar, .botonSecundario, .botonEnviarAdmin {
+    box-shadow: none;
+    cursor: pointer;
     font-size: 1em;
+    font-weight: 500;
 }
 
-.contInfo {
+.botonEnviar {
+    background-color: #dab410;
+    border: 2px solid #eee;
+    color: white;
+}
+
+.botonEnviar:hover {
+    background-color: white;
+    border: 2px solid #dab410;
+    color: #dab410;
+}
+
+.botonEnviarAdmin {
+    background-color: #333;
+    border: 2px solid #111;
+    color: white;
+}
+
+.botonEnviarAdmin:hover {
+    background-color: #777;
+}
+
+.botonSecundario {
+    background-color: white;
+    border: 2px solid orangered;
+    color: orangered;
+}
+
+.botonSecundario:hover {
     background-color: orangered;
+    border: 2px solid #fff;
+    color: white;
+}
+
+.formulario span {
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.formLink {
+    color: #dab410;
+    font-weight: bold;
+}
+
+.contInfo, .contInfoClaro {
     color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.contInfo {
+    background-color: orangered;
+}
+
+.contInfoClaro {
+    background-color: #ddd;
+    color: #333;
+}
+
+.contInfo span, .contInfo p {
     font-size: 0.9em;
+    font-weight: 400;
 }
 
 .infoDiv {
@@ -106,7 +167,11 @@
 }
 
 @media (max-width:576px) {
+    .contMain {
+        padding: 0;
+    }
     .contFormulario {
+        border-radius: none;
         width: 100%;
     }
 }

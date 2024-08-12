@@ -22,30 +22,51 @@ ul {
     list-style: none;
 }
 
-.contHome {
+/*.contHome {
     background-image: linear-gradient(rgba(225, 175, 4, 0.25), rgba(210, 150, 20, 0.25)), url(../img/fondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 360px;
-    margin-top: 90px;
+    margfin-top: 90px;
+}
+
+.contMain {
+    background-color: #4b34fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 90px);
+    margifn-top: 90px;
+    padfding: 40px 0;
+    width: 100%;
+}*/
+
+.contBanner {
+    background-image: linear-gradient(rgba(215, 168, 7, 0.3), rgba(248, 205, 58, 0.3)), url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100dvh - 80px);
+    width: 100%;
 }
 
 .banner {
-    background-color: rgba(225, 175, 4, 0.75);
+    background: linear-gradient(rgba(215, 168, 7, 0.95), rgba(248, 205, 58, 0.65));
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 120px;
+    height: 200px;
+    width: 100%;
 }
 
 .banner > h1 {
     color: #fff;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 300;
+    line-height: 175px;
     max-width: 992px;
-    margin-top: 20px;
-    text-shadow: 2px 1px 4px #000;
+    text-shadow: 4px 4px 4px #000;
 }
 
 .busqueda {
@@ -57,8 +78,7 @@ ul {
     border: none;
     box-shadow: 2px 2px 8px #333;
     font-size: 1.1em;
-    height: 50px;
-    margin-top: 20px;
+    height: 45px;
     outline: none;
     padding: 5px 10px;
 }
@@ -91,8 +111,8 @@ ul {
     display: flex;
     justify-content: space-around;
     height: 320px;
-    max-width: 1200px ;
     margin: 0 auto;
+    width: 100%;
 }
 
 .card {
@@ -116,7 +136,8 @@ ul {
     background-color: #333;
     font-size: 0.85em;
     margin-top: 40px;
-    padding: 40px;
+    padding: 20px 0;
+    width: 100%;
 }
 
 .menuPie {    

@@ -8,81 +8,101 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     
-    <link type="text/css" rel="stylesheet" href="css/header.css">
-    <link type="text/css" rel="stylesheet" href="css/principal.css">
+    <link type="text/css" rel="stylesheet" href="./css/header.css">
+    <link type="text/css" rel="stylesheet" href="./css/principal.css">
+
+    <script defer src="./js/redDocu.js"></script>
   </head>
   
   <body>
-    <div class="contHome">
-      <!--  Inicio navegación  -->
-      <header class="encabezado"> 
-        <div class="contNav">
+    <div class="main mainBloque">
 
-          <div class="redesSesiones">
-            <div class="redes">
-              <a href="#" class="iconoRed"><img src="./img/fb.png" alt="Ir a la página de la biblioteca en facebook"></a>
-              <a href="#" class="iconoRed"><img src="./img/yt.png" alt="Ir al canal de la biblioteca en youtube"></a>
-              <a href="#" class="iconoRed"><img src="./img/x.png" alt="Publicaciones de la biblioteca en X"></a>
-            </div>
-            <div class="sesiones">
-              <a href="#"> Administradores </a>
-              <a href="./pages/login.html"> Iniciar sesión </a>
-              <a href="./pages/registro.html"> Registro </a>
-            </div>
+      <!--  Inicio encabezado  -->
+      <header class="header">
+  
+        <div class="topBar"><!--  Inicio barra superior  -->
+  
+          <div class="social">          
+            <a href="https://www.facebook.com"> <img src="./img/facebook.svg" class="icon" alt=""></a>
+            <a href="https://www.youtube.com"> <img src="./img/youtube.svg" class="icon" alt=""></a>
+            <a href="https://www.whatsapp.com"> <img src="./img/whatsapp.svg" class="icon" alt=""></a>
           </div>
-
-          <div class="navegacion">
-            <div class="logo"><!--  Logo  -->
-              <a href="index.html">
-                <img src="./img/logo.png" alt="Logo de la biblioteca" class="logoImg">
-                <span class="logoTexto">redDocu</span>
-              </a>
-            </div>
-
-            <div>
-              <ul class="menu">
-                <li class="itemMenu"><a href="index.html" class="enlaceMenu"> Inicio </a></li>
-                <li class="itemMenu">
-                  <a href="./pages/nosotros.html" class="enlaceMenu"> Nosotros </a>
-                  <ul class="subMenu">
-                    <li><a class="enlaceSubmenu" href="./pages/historia.html#mision-vision"> Misión - Visión </a></li>
-                    <li><a class="enlaceSubmenu" href="./pages/historia.html#equipo"> Nuestro equipo </a></li>
-                  </ul>
-                </li>
-                <li class="itemMenu"><a href="./pages/colecciones.html" class="enlaceMenu"> Colecciones </a>
-                  <ul class="subMenu">
-                    <li><a class="enlaceSubmenu" href="#"> Partituras </a></li>
-                    <li><a class="enlaceSubmenu" href="#"> Libros antiguos </a></li>
-                    <li><a class="enlaceSubmenu" href="#"> Manuscritos </a></li>
-                  </ul>
-                </li>
-                <li class="itemMenu"><a href="./pages/publicaciones.html" class="enlaceMenu"> Publicaciones </a>
-                  <ul class="subMenu">
-                    <li><a class="enlaceSubmenu" href="./pages/noticias.html"> Noticias </a></li>
-                    <li><a class="enlaceSubmenu" href="./pages/eventos.html"> Eventos </a></li>
-                  </ul>
-                </li>
-                <li class="itemMenu"><a href="./pages/ayuda.html" class="enlaceMenu"> Ayuda </a>
-                  <ul class="subMenu">
-                    <li><a class="enlaceSubmenu" href="./pages/preguntas.html"> Preguntas frecuentes </a></li>
-                  </ul>
-                </li>
-                <li class="itemMenu"><a href="./pages/contacto.html" class="enlaceMenu"> Contacto </a></li>
-              </ul>
-            </div> <!-- Menú  -->
+  
+          <div class="login" id="loginList">
+            <a href="./pages/loginAdmin.html"> Administradores </a>
+            <a href="./pages/login.html"> Usuarios </a>
+            <a href="./pages/registro.html"> Registro </a>          
           </div>
-        </div>
+  
+          <div class="loginIcon" id="loginIcon">
+            <img src="./img/login.svg" class="icon" alt="">
+          </div>
+          
+        </div><!--  Fin barra superior  -->
+  
+        <div class="navBar"><!--  Inicio barra de navegación  -->
+  
+          
+          <a href="" class="">
+            <div class="contLogo"><!--  Logo  -->
+              <img src="./img/book.svg" alt="" class="logo">
+              <h1 class="logoText"> redDocu </h1>
+            </div>
+          </a>
+  
+          <nav class="navigation" id="navigation"><!--  Menu  -->
+            <ul class="menu">
+              <li class="menuItem"><a href="index.html" class="menuLink"> Inicio </a></li>
+              <li class="menuItem"><a href="./pages/nosotros.html" class="menuLink"> Nosotros </a>
+                <ul class="subMenu">
+                  <li><a href="./pages/nosotros.html"> Nuestra historia </a></li>
+                  <li><a href="./pages/nosotros.html#mision-vision"> Misión - Visión </a></li>
+                  <li><a href="./pages/nosotros.html#equipo"> Nuestro Equipo </a></li>
+                </ul>
+              </li>
+              <li class="menuItem"><a href="./pages/colecciones.html" class="menuLink"> Colecciones </a>
+                <ul class="subMenu">
+                  <li><a href="#"> Partituras </a></li>
+                  <li><a href="#"> Libros antiguos </a></li>
+                  <li><a href="#"> Manuscritos </a></li>
+                </ul>            
+              </li>
+              <li class="menuItem"><a href="./pages/publicaciones.html" class="menuLink"> Publicaciones </a>
+                <ul class="subMenu">
+                  <li><a href="./pages/noticias.html"> Noticias </a></li>
+                  <li><a href="./pages/eventos.html"> Eventos </a></li>
+                </ul>
+              </li>
+              <li class="menuItem"><a href="./pages/ayuda.html" class="menuLink"> Ayuda </a>
+                <ul class="subMenu">
+                  <li><a href="./pages/ayuda.html"> Preguntas frecuentes </a></li>
+                  <li><a href="./pages/preguntas.html"> Otra ayuda </a></li>
+                </ul>
+              </li>
+              <li class="menuItem"><a href="./pages/contacto.html" class="menuLink"> Contacto </a></li>
+            </ul>
+          </nav>        
+  
+          <input type="checkbox" name="" id="menu-check"><!--  botones menu y cerrar  -->
+          <div class="menuIcon" id="menu-icon">
+            <label for="menu-check">
+              <img src="./img/menu.svg" alt="" id="open-icon">
+              <img src="./img/close.svg" alt="" id="close-icon">
+            </label>
+          </div>
+        </div><!--  Fin barra de navegación  -->
+  
       </header>
-      <!-- Fin Navegación  -->
-
-      <div class="banner">
-        <h1> Bienvenido a la biblioteca virtual </h1>
-        <div class="busqueda">
-          <input type="search" placeholder="Ingrese términos de búsqueda">
-          <button> Buscar </button>
+      <!--  Fin barra de encabezado  -->
+      <div class="contBanner">
+        <div class="banner">
+          <h1> Bienvenido a la biblioteca virtual </h1>
+          <form class="busqueda" action="./pages/resultados.html">
+            <input type="search" placeholder="Ingrese términos de búsqueda">
+            <button> Buscar </button>
+          </form>
         </div>
       </div>
-    </div>
 
     <h1 class="destacadosTitulo"> Publicaciones destacadas </h1>
     <p class="destacadosSub"> Consulte rápido noticias, eventos y otras publicaciones </p>
@@ -128,7 +148,7 @@
           <li><a class="resaltado" href="index.html"> Inicio </a></li>
           <li><a href="./pages/login.html"> Iniciar sesión </a></li>
           <li><a href="./pages/registro.html"> Registro </a></li>
-          <li><a href="#"> Administradores </a></li>
+          <li><a href="./pages/loginAdmin.html"> Administradores </a></li>
         </ul>
   
         
@@ -167,13 +187,13 @@
         <p> Guayabal 2024 </p>
       </div>
     </footer>
+  </div>
 
 
 
 
     <!-- <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">icons created by Freepik - Flaticon</a> -->
-
-    <script src="redDocu.js"></script>   
+  
  
   </body>
 
