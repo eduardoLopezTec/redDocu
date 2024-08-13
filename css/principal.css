@@ -219,14 +219,15 @@ ul {
     }
 
     .menuPie {
-        flex-direction: column;
         font-size: 1.2em;
-        justify-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
         margin: 0 5%;
     }
 
     .menuPie ul {
         margin-bottom: 10px;
+        width: 50%;
     }
 
     .menuPie ul li {

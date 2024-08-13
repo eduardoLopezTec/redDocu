@@ -1,0 +1,163 @@
+/*
+  Estos estilos corresponden a los siguientes archivos:
+
+  - historia.html
+    - misión
+    - visión
+  - colecciones.html
+  - publicaciones.html
+  - noticias.html
+  - eventos.html
+  - ayuda.html
+  - preguntas.html
+  - contacto.html
+*/
+
+
+/****  Nosotros  ****/
+
+.contNosotros {
+  color: #333;
+  margin: 10px auto 0 auto;
+  width: 922px;
+}
+
+.contNosotros h2 {
+  font-weight: 400;
+}
+
+.contNosotros .h2vision {
+  margin-top: 90px;
+}
+
+.contNosotros p {
+  font-weight: 400;
+  line-height: 1.8em;
+  margin-top: 20px;
+}
+
+.contMision, .contEquipo {
+  padding-top: 90px;
+}
+
+/****  Resultados  ****/
+
+.filterBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ddd;
+  height: 50px;
+  padding: 0 20px;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+}
+
+.contFiltros > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contFiltros > li a {
+  color: #222;
+  font-size: 0.85em;
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+.contFiltros > li a:hover {
+  color: #dab410;
+}
+
+.newSearch > input, .newSearch > button {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #999;
+  outline: none;
+  padding: 5px;
+}
+
+.newSearch > button {
+  background-color: #dab410;
+  width: 70px;
+}
+
+.resultados {
+  max-width: 992px;
+  padding: 80px 20px 20px 20px;
+}
+
+.resultados > p {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.singleResult {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.singleResult .resultImage {
+  padding-top: 20px;
+  width: 10%;
+}
+
+.resultImage img {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.singleResult .resultDetails {
+  padding: 20px 0;
+  width: 90%;
+}
+
+.singleResult .resultDetails span, .singleResult .resultDetails p {
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.singleResult .resultDetails span {
+  color: #555;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.singleResult .resultDetails h3 a {
+  color: #0a6cac;
+}
+
+@media (max-width:768px) {
+  .contNosotros {
+    padding: 10px 5%;
+    width: 100%;
+  }
+  /****  Nosotros  ****/
+
+  .filterBar {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 80px;
+    padding: 0 5%;
+  }
+
+  .resultados {
+    width: 100%;
+  }
+
+  .resultImage {
+    width: 30%;
+  }
+
+  .resultImage img {
+    width: 100%;
+  }
+
+  .resultDetails {
+    width: 70%;
+  }
+}

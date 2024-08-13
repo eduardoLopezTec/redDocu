@@ -7,8 +7,7 @@
   
     <link type="text/css" rel="stylesheet" href="../css/header.css">
     <link type="text/css" rel="stylesheet" href="../css/principal.css">
-    <link type="text/css" rel="stylesheet" href="../css/formularios.css">
-    <link type="text/css" rel="stylesheet" href="../css/resultados.css">
+    <link type="text/css" rel="stylesheet" href="../css/estilos.css">
 
     <script defer src="../js/redDocu.js"></script>
 </head>
@@ -93,20 +92,102 @@
     </header>
     <!--  Fin barra de encabezado  -->
 
-  <div class="contFlexStart">
-    <div class="filtro">
-        <div class="formGrupo">
-            <input type="search" name="" id="" class="campoTexto buscarSmall" placeholder="ingrese términos de búsqueda...">
-            <button type="submit" class="botonEnviar botonSmall"> Buscar</button>
-        </div>
-        <div class="filtros">
-            <input type="button" value="" class="botonSmall">
-            <input type="button" value="" class="botonSmall">
-            <input type="button" value="" class="botonSmall">
-            <input type="button" value="" class="botonSmall">
-        </div>
+    <div class="filterBar">
+      <ul class="contFiltros">
+        <li class="filtro"><a href="#"> Texto </a></li>
+        <li class="filtro"><a href="#"> Audio </a></li>
+        <li class="filtro"><a href="#"> Video </a></li>
+        <li class="filtro"><a href="#"> Imagen </a></li>
+      </ul>
+
+      <div class="newSearch">
+        <input type="text" name="" id="">
+        <button type="submit"> Buscar </button>
+      </div>
     </div>
+
+    <div class="resultados">
+      <p> Resultados de búsqueda para <strong>"texto de consulta ingresado..."</strong></p>
+
+      <div class="singleResult">
+        <div class="resultImage">
+          <img src="../img/text.png" alt="">
+        </div>
+        <div class="resultDetails">
+          <span> Tipo de documento </span>
+          <h3>
+            <a href=""> Título del documento </a>
+          </h3>
+          <p> Autor </p>
+          <p> Año </p>
+          <p> Editorial </p>
+          <p> Resumen Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Autem illum dolor eum quaerat cupiditate error deleniti praesentium accusamus, 
+              mollitia incidunt! 
+          </p>
+        </div>
+      </div> <!-- Resultado individual -->
+
+      <div class="singleResult">
+        <div class="resultImage">
+          <img src="../img/audio.png" alt="">
+        </div>
+        <div class="resultDetails">
+          <span> Tipo de documento </span>
+          <h3>
+            <a href=""> Título del documento </a>
+          </h3>
+          <p> Autor </p>
+          <p> Año </p>
+          <p> Editorial </p>
+          <p> Resumen Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Autem illum dolor eum quaerat cupiditate error deleniti praesentium accusamus, 
+              mollitia incidunt! 
+          </p>
+        </div>
+      </div>
+
+      <div class="singleResult">
+        <div class="resultImage">
+          <img src="../img/video.png" alt="">
+        </div>
+        <div class="resultDetails">
+          <span> Tipo de documento </span>
+          <h3>
+            <a href=""> Título del documento </a>
+          </h3>
+          <p> Autor </p>
+          <p> Año </p>
+          <p> Editorial </p>
+          <p> Resumen Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Autem illum dolor eum quaerat cupiditate error deleniti praesentium accusamus, 
+              mollitia incidunt! 
+          </p>
+        </div>
+      </div>
+
+      <div class="singleResult">
+        <div class="resultImage">
+          <img src="../img/image.png" alt="">
+        </div>
+        <div class="resultDetails">
+          <span> Tipo de documento </span>
+          <h3>
+            <a href=""> Título del documento </a>
+          </h3>
+          <p> Autor </p>
+          <p> Año </p>
+          <p> Editorial </p>
+          <p> Resumen Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Autem illum dolor eum quaerat cupiditate error deleniti praesentium accusamus, 
+              mollitia incidunt! 
+          </p>
+        </div>
+      </div>
+    </div>
+  
   </div>
+
 
 
 </body>
