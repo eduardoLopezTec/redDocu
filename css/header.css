@@ -1,19 +1,5 @@
 /**** Estilos para el encabezado: barra superior y barra de navegación ****/
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 80px;
-  min-height: calc(100dvh - 80px);
-  width: 100%;
-}
-
-.mainBloque {
-  flex-direction: column;
-}
-
 .header {
   height: 80px;
   position: fixed;
@@ -119,7 +105,7 @@
 }
 
 .subMenu {
-  background-color: #ddd;
+  background-color: #eee;
   box-shadow: 1px 1px 4px #333;
   display: none;
   position: absolute;
@@ -137,8 +123,9 @@
 }
 
 .navigation .subMenu li a {
-  color: #333;
+  color: #111;
   display: block;
+  font-weight: 400;
   padding: 5px 20px;
   text-align: center;
   width: 100%;

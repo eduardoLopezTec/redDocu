@@ -13,28 +13,33 @@
   - contacto.html
 */
 
-.contenedor {
-  
-}
-
-.contMain {
+.contNosotros {
   color: #333;
-  margin: 0 auto;
-  padding: 40px;
+  margin: 10px auto 0 auto;
   width: 922px;
 }
 
-.contMain h2 {
+.contNosotros h2 {
   font-weight: 400;
-  padding: 20px 0;
 }
 
-.contMain p {
+.contNosotros .h2vision {
+  margin-top: 90px;
+}
+
+.contNosotros p {
   font-weight: 400;
   line-height: 1.8em;
   margin-top: 20px;
 }
 
-.contHistoria, .contMision, .contVision {
-  padding-top: 100px;
+.contMision, .contEquipo {
+  padding-top: 90px;
+}
+
+@media (max-width:768px) {
+  .contNosotros {
+    padding: 10px 5%;
+    width: 100%;
+  }
 }

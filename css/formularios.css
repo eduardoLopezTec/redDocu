@@ -140,7 +140,7 @@
 .infoDiv {
     text-align: center;
     width: 100%;
-}
+    }
 
 .infoDiv img, .infoDiv span {
     display: block;
@@ -154,24 +154,17 @@
 
 
 @media (max-width:768px) {
-    .contFormulario {
+
+    .contFormulario, .contFormularioAdmin {
+        border-radius: 0;
         flex-direction: column;
-        width: 70%;
+        margin: 0;
+        width: 100%;
     }
     .formulario, .contInfo {
         width: 100%;
     }
     .infoDiv {
         padding: 20px;
-    }
-}
-
-@media (max-width:576px) {
-    .contMain {
-        padding: 0;
-    }
-    .contFormulario {
-        border-radius: none;
-        width: 100%;
     }
 }
