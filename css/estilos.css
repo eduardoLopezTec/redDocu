@@ -130,6 +130,64 @@
   color: #0a6cac;
 }
 
+/****  Cuenta usuario  ****/
+
+.accountBar {
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: #242de3;
+  height: 40px;
+  padding: 0 20px;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+}
+
+.accountBar span {
+  color: white;
+  font-size: 0.85em;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+
+.contAccount {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  width: 992px;
+}
+
+.contAccount .aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  width: 30%;
+}
+
+.contAccount .aside div {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.contAccount .accountContent {
+  padding: 20px 10px;
+  width: 70%;
+}
+
+.accountContent div {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 600px;
+  padding: 10px;
+  width: 100%;
+}
+
 @media (max-width:768px) {
   .contNosotros {
     padding: 10px 5%;
@@ -159,5 +217,17 @@
 
   .resultDetails {
     width: 70%;
+  }
+
+  .contAccount {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .contAccount .aside, .contAccount .accountContent {
+    padding: 0 10px;
+    width: 100%;
   }
 }

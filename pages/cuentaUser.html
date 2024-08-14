@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title> Iniciar sesión | redDocu </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  
-  <link type="text/css" rel="stylesheet" href="../css/header.css">
-  <link type="text/css" rel="stylesheet" href="../css/principal.css">
-  <link type="text/css" rel="stylesheet" href="../css/formularios.css">
-
-  <script defer src="../js/redDocu.js"></script>
 <head>
-</head>
-<body>  
-    <!--  Inicio navegación  -->
-  <div class="main">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cuenta usuario | redDocu </title>
   
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
+    <link type="text/css" rel="stylesheet" href="../css/principal.css">
+    <link type="text/css" rel="stylesheet" href="../css/estilos.css">
+
+    <script defer src="../js/redDocu.js"></script>
+</head>
+<body>
+  <div class="main" style="background-color: #aaa;">
+
+    <!--  Inicio encabezado  -->
     <header class="header">
 
-      <div class="topBar">
+      <div class="topBar"><!--  Inicio barra superior  -->
 
         <div class="social">          
           <a href="https://www.facebook.com"> <img src="../img/facebook.svg" class="icon" alt=""></a>
@@ -35,19 +35,19 @@
           <img src="../img/login.svg" class="icon" alt="">
         </div>
         
-      </div>
+      </div><!--  Fin barra superior  -->
 
-      <div class="navBar">
+      <div class="navBar"><!--  Inicio barra de navegación  -->
 
         
         <a href="" class="">
-          <div class="contLogo">
+          <div class="contLogo"><!--  Logo  -->
             <img src="../img/book.svg" alt="" class="logo">
             <h1 class="logoText"> redDocu </h1>
           </div>
         </a>
 
-        <nav class="navigation" id="navigation">
+        <nav class="navigation" id="navigation"><!--  Menu  -->
           <ul class="menu">
             <li class="menuItem"><a href="../index.html" class="menuLink"> Inicio </a></li>
             <li class="menuItem"><a href="nosotros.html" class="menuLink"> Nosotros </a>
@@ -80,54 +80,35 @@
           </ul>
         </nav>        
 
-        <input type="checkbox" name="" id="menu-check">
+        <input type="checkbox" name="" id="menu-check"><!--  botones menu y cerrar  -->
         <div class="menuIcon" id="menu-icon">
           <label for="menu-check">
             <img src="../img/menu.svg" alt="" id="open-icon">
             <img src="../img/close.svg" alt="" id="close-icon">
           </label>
         </div>
-      </div>
+      </div><!--  Fin barra de navegación  -->
 
-    </header>  
-  
+    </header>
+    <!--  Fin encabezado  -->
 
-    <div class="contFormulario">
-      <form action="cuentaUser.html" class="formulario">
+    <div class="accountBar">
+      <span> Nombre usuario </span>
+      <span> Foto </span>
+    </div> <!-- dfjdask jjdfk jdklf-->
 
-        <h2 class="tituloFormulario"> Iniciar sesión </h2>
-        <div class="formGrupo">
-          <label for="usuario" class="formLabel"> Usuario - Correo registrado </label>
-          <input type="mail" name="" id="usuario" class="campoTexto">
+    <div class="contAccount">
+        <div class="aside">
+            <div> aside 1 </div>
+            <div> aside 2 </div>
         </div>
-
-        <div class="formGrupo">  
-          <label for="clave" class="formLabel"> Contraseña </label>
-          <input type="password" name="" id="clave" class="campoTexto" >
+        <div class="accountContent">
+            <div class="content"> Contenido </div>
         </div>
-
-        <div class="formGrupo">
-          <span> <a class="formLink" href="#"> ¿Olvidó su contraseña? </a> </span>
-        </div>
-
-        <div class="formGrupo">
-          <button type="submit" class="botonEnviar"> Enviar </button>
-        </div>        
-      </form>
-
-      <div class="contInfo">
-        <div class="infoDiv">
-          <h2 class="tituloFormulario"> ¿Aún no tiene una cuenta? </h2>
-          <p class="info"> 
-            Regístrese y haga parte de una inmensa comunidad que está compartiendo conocimiento. 
-          </p>
-          <div class="formGrupo">
-            <a href="registro.html"><button type="button" class="botonSecundario"> Regístrese </button></a>
-          </div>
-        </div>
-      </div>
     </div>
+  
   </div>
 
+
+
 </body>
-</html>
