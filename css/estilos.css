@@ -135,6 +135,7 @@
 .accountBar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 
   background-color: #242de3;
   height: 40px;
@@ -151,6 +152,13 @@
   padding: 10px 20px;
 }
 
+.accountBar img {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 34px;
+  padding: 1px;
+}
+
 .contAccount {
   display: flex;
   justify-content: space-between;
@@ -163,21 +171,72 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 10px;
-  width: 30%;
+  width: 25%;
 }
 
-.contAccount .aside div {
+.contAccount .aside > div {
   background-color: #fff;
   border-radius: 5px;
-  height: 300px;
+  height: 250px;
   margin-bottom: 20px;
   padding: 10px;
   width: 100%;
 }
 
+.contAccount .aside div .imgProfile {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  margin-bottom: 0;
+}
+
+.contAccount .aside div .alertIcons {
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+}
+
+.contAccount .aside div .imgProfile > img {
+  height: 70%;
+}
+
+.contAccount .aside div .imgProfile > span {
+  font-weight: 400;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.contAccount .aside .sets {
+  background-color: #fff;
+}
+
+.contAccount .aside .sets > div {
+  height: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contAccount .aside .sets > div > img {
+  height: 32px;
+  margin-right: 20px;
+}
+
+.alertIcons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+}
+
+.alertIcons > div > img {
+  height: 36px;
+
+}
+
 .contAccount .accountContent {
   padding: 20px 10px;
-  width: 70%;
+  width: 75%;
 }
 
 .accountContent div {
