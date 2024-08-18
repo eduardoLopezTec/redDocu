@@ -13,6 +13,11 @@
   - contacto.html
 */
 
+.ajustarArriba {
+  justify-content: center;
+  align-items: flex-start;
+}
+
 
 /****  Nosotros  ****/
 
@@ -99,19 +104,25 @@
   justify-content: flex-start;
 }
 
+.singleResult:hover {
+  box-shadow: 2px 2px 8px #ccc;
+}
+
 .singleResult .resultImage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   padding-top: 20px;
-  width: 10%;
+  width: 5%;
 }
 
 .resultImage img {
-  margin: 0 auto;
   width: 80%;
 }
 
 .singleResult .resultDetails {
-  padding: 20px 0;
-  width: 90%;
+  padding: 20px;
+  width: 95%;
 }
 
 .singleResult .resultDetails span, .singleResult .resultDetails p {
@@ -130,7 +141,7 @@
   color: #0a6cac;
 }
 
-/****  Cuenta usuario  ****/
+/****  Cuenta usuario. Nota: el color de background del contenido está en el div class="main" del documento html  ****/
 
 .accountBar {
   display: flex;
@@ -161,6 +172,8 @@
 
 .contAccount {
   display: flex;
+  font-size: 0.85em;
+  font-weight: 400;
   justify-content: space-between;
   padding-top: 60px;
   width: 992px;
@@ -177,9 +190,9 @@
 .contAccount .aside > div {
   background-color: #fff;
   border-radius: 5px;
+  box-shadow: 0px 0px 8px #aaa;
   height: 250px;
   margin-bottom: 20px;
-  padding: 10px;
   width: 100%;
 }
 
@@ -196,13 +209,15 @@
   height: 15%;
 }
 
+.contAccount .aside div .alertIcons > div {
+  padding: 10px 0;
+}
+
 .contAccount .aside div .imgProfile > img {
   height: 70%;
 }
 
 .contAccount .aside div .imgProfile > span {
-  font-weight: 400;
-  font-size: 0.85em;
   text-align: center;
 }
 
@@ -213,13 +228,22 @@
 .contAccount .aside .sets > div {
   height: 25%;
   display: flex;
+  padding: 0 10px;
   justify-content: flex-start;
   align-items: center;
+}
+
+.contAccount .aside .sets > div:hover, .contAccount .aside div .alertIcons > div:hover {
+  background-color: #eee;
 }
 
 .contAccount .aside .sets > div > img {
   height: 32px;
   margin-right: 20px;
+}
+
+.contAccount .aside .sets > div > a {
+  color: #333;
 }
 
 .alertIcons > div {
@@ -231,7 +255,6 @@
 
 .alertIcons > div > img {
   height: 36px;
-
 }
 
 .contAccount .accountContent {
@@ -239,13 +262,67 @@
   width: 75%;
 }
 
-.accountContent div {
+.accountContent > p {
+  line-height: 2em;
+}
+.accountContent .content {
   background-color: #fff;
   border-radius: 5px;
+  box-shadow: 0px 0px 8px #aaa;
   height: 600px;
+  margin-top: 20px;
   padding: 10px;
   width: 100%;
 }
+
+/****  Preguntas frecuentes  ****/
+
+.preguntas {
+  padding: 20px;
+  width: 992px;
+}
+
+.preguntas > h3 {
+  padding: 20px 0;
+}
+
+.contPregunta {
+  margin-bottom: 10px;
+}
+
+.pregunta {
+  background-color: #aaa;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+.respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.respuesta p {
+  font-weight: 400;
+  padding: 10px;
+}
+
+.contPregunta.mostrar .respuesta {
+  max-height: 240px;
+}
+
+.contPregunta.mostrar img {
+  transform: rotate(180deg);
+}
+
+.pregunta img {
+  transition: transform 0.2s ease-in;
+}
+
 
 @media (max-width:768px) {
   .contNosotros {
@@ -263,20 +340,22 @@
   }
 
   .resultados {
+    padding: 90px 10px 0 10px;
     width: 100%;
   }
 
-  .resultImage {
-    width: 30%;
+  .singleResult .resultImage {
+    width: 15%;
   }
 
   .resultImage img {
-    width: 100%;
+    width: 90%;
   }
 
-  .resultDetails {
-    width: 70%;
+  .singleResult .resultDetails {
+    width: 85%;
   }
+
 
   .contAccount {
     flex-direction: column;
@@ -287,6 +366,11 @@
 
   .contAccount .aside, .contAccount .accountContent {
     padding: 0 10px;
+    width: 100%;
+  }
+
+  .preguntas {
+    padding: 10px;
     width: 100%;
   }
 }

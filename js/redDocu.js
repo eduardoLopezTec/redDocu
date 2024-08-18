@@ -11,3 +11,12 @@ const showMenu = document.getElementById("navigation");
  iconMenu.addEventListener("click", () => {
   showMenu.classList.toggle("showNavigation");
  });
+
+
+ const respuestas = document.querySelectorAll(".contPregunta");
+
+ respuestas.forEach(contPregunta => {
+  contPregunta.addEventListener("click", () => {
+    contPregunta.classList.toggle("mostrar");
+  })
+ });
